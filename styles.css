@@ -33,9 +33,14 @@ html {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    background-color: transparent;
+    border: 0;
   }
 
+  header {
+    max-height: 10rem;
+    padding: 0 0 0 0;
+  }
+  
   h1 {
     font-family: "Proza Libre", sans-serif;
     margin: 0;
@@ -45,12 +50,11 @@ html {
   nav {
     display: flex;
     align-items: center;
-    padding: var(--spacing-3) 0;
+    padding: 0;
   }
   
   .navigation-items {
     display: flex;
-    flex-wrap: wrap;
     list-style-type: none;
     padding: 0;
     align-items: center;
@@ -60,6 +64,7 @@ html {
 
   .navigation-item {
     margin: var(--spacing-1);
+    margin-right: auto;
   }
 
   .break {
@@ -72,9 +77,10 @@ html {
   }
 
 #ecological-definition{
-    display: none;
+    display: flex;
     top: 40rem;
-    color: grey;
+    color: lightgray;
+    margin-right: auto;
   }
 
 
@@ -87,11 +93,12 @@ html {
 
   #logo {
     margin: 0;
+    color: seashell;
   }
 
   .splash{
-    padding: 25% 0 0 0;
-    background-image: url("/.images/creek.jpeg");
+    padding: 25% 0% 0% 0%;
+    background-image: url("./images/creek.jpeg");
     background-repeat: none;
     background-position: center;
     background-size: cover;
