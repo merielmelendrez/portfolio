@@ -18,70 +18,138 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/068696ff86.js" crossorigin="anonymous"></script>
-
+        <script src="./design.js" async></script>
     </head>
 
     <body>
 <!--Header-->
-        <header>
-                <nav class="row">
+        <header class="header">
+
+                <!-- Desktop Navigation -->
+                <nav id="desktop">
+                    <a id="logo" href="./index.html"><li class="present">MERIEL MELENDREZ MEES</li></a>
                     <ul class="navigation-items">
-                    <li class="navigation-item" id="ecological" ><a href="./ecological.html"><dfn title=": pertaining to the relationships between organisms and their environments">ECOLOGICAL</dfn></a></li>
-                    <li class="navigation-item"><a href="./design.html">DESIGN</a></li>
-                    <li class="navigation-item"><a href="./care.html">CARE</a></li>
-                    <li class="navigation-item"><a href="./education.html">EDUCATION</a></li>
-                    <li class="navigation-item"><a href="./research.html">RESEARCH</a></li>
-                    <li class="navigation-item"><a href="./engineering.html">ENGINEERING</a></li>
-                    <li class="navigation-item"><a href="./arts.html">ARTS</a></li>
+                        <li class="navigation-item" id="ecological" ><a href="./ecological.html"><dfn title=": pertaining to the relationships between organisms and their environments">ECOLOGICAL</dfn></a></li>
+                        <li class="navigation-item"><a href="./design.html">DESIGN</a></li>
+                        <li class="navigation-item"><a href="./care.html">CARE</a></li>
+                        <li class="navigation-item"><a href="./education.html">EDUCATION</a></li>
+                        <li class="navigation-item"><a href="./research.html">RESEARCH</a></li>
+                        <li class="navigation-item"><a href="./engineering.html">ENGINEERING</a></li>
+                        <li class="navigation-item"><a href="./arts.html">ART</a></li>
                     </ul>
                 </nav>
+
+                <!--Mobile Navigation-->
+                <nav id="mobile">
+                    <a id="logo-mobile mobile-present" href="./index.html">MERIEL MELENDREZ MEES</a-->
+                    <div class="menu-container">
+                        <a class="navigation-item-mobile" id="ecological-mobile" href="./ecological.html"><dfn title=": pertaining to the relationships between organisms and their environments">ECOLOGICAL</dfn></a>
+                        <input class="menu-btn" type="checkbox" id="menu-btn" />
+                        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                    
+
+                            <ul class="menu">
+                                <li class="navigation-item-mobile"><a href="./design.html">DESIGN</a></li>
+                                <li class="navigation-item-mobile"><a href="./care.html">CARE</a></li>
+                                <li class="navigation-item-mobile"><a href="./education.html">EDUCATION</a></li>
+                                <li class="navigation-item-mobile"><a href="./research.html">RESEARCH</a></li>
+                                <li class="navigation-item-mobile"><a href="./engineering.html">ENGINEERING</a></li>
+                                <li class="navigation-item-mobile"><a href="./arts.html">ART</a></li>
+                            </ul>
+                        
+                    </div>
+                </nav>
         </header>
+                
+
 
 <!--Main Body-->
         <main>
-    <!-- title -->
-        <!--div class="splash">
-            <h1 id="logo">meriel</h1>
-        </div-->
         <section id="introduction">
             <div class="introduction-container">
                 <img 
-                    src="./images/Meriel-17.jpg" 
-                    alt="a photo of Meriel" 
-                    class="portrait"
+                src="./images/Meriel-17.jpg" 
+                alt="a photo of Meriel" 
+                class="portrait"
                 />
                 <div class="introduction-text-container">
                     <h1>Hello.</h1>
-                    <p>My name is Meriel Melendrez Mees. <br />
-                        I strive to live 
+                    <p> My name is Meriel.</p>
+                    <p>I strive to live 
                         <a href="./amor.html" id="ecological">
                             <dfn title='a Spanish neologic idiom : in harmony with the generous, wild nature of life.'>
                                 al amor de la vida
                             </dfn>
                         </a>
-                        — I operate within a systems paradigm.<br />
-                        Right now, I’m interested in building tech for tackling wicked problems, 
-                        so I’m studying software engineering and machine learning.<br />
-                        If you want to collaborate on a project, please reach out!<br/>
-                        </p>
-                    <i class="fa-solid fa-envelope fa-2xl"></i>
-                    <a href="https://github.com/merielmelendrez" target="blank"><i class="fa-brands fa-github fa-2xl"></i></a>  
-                    <a href="https://www.linkedin.com/in/merielmm/" target="blank"><i class="fa-brands fa-linkedin-in fa-2xl"></i></a> 
-                    <br />
-                    <br />
-                    <p>Or, we can kick it online.</p>
-                    <i class="fa-brands fa-twitter fa-2xl"></i>
-                    <a href="https://www.instagram.com/merielmelendrezmees/" target="blank"><i class="fa-brands fa-square-instagram fa-2xl"></i></a><br /><br />
-                    <p>I also happen to be scientifically busking until November 7th, 2022. Please pitch in to support research about California Redwoods?</p>
-                    <a href="https://experiment.com/projects/how-do-california-redwood-stomata-change-with-height-what-are-the-implications-in-physiology-and-taxonomy" target="blank"><i class="fa-solid fa-flask fa-2xl"></i></a>
+                        — I operate within a systems paradigm.</p>
+                        <p>Right now, I’m interested in building tech for tackling wicked problems, 
+                        so I’m studying software engineering and machine learning.</p>
+                        <p>If you want to collaborate on a project, please write!
+                            <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#101;&#114;&#105;&#101;&#108;&#64;&#98;&#101;&#114;&#107;&#101;&#108;&#101;&#121;&#46;&#101;&#100;&#117;" target="blank"><i class="fa-solid fa-envelope fa-xl"></i></a>
+                    <a href="https://github.com/merielmelendrez" target="blank"><i class="fa-brands fa-github fa-xl"></i></a>  
+                    <a href="https://www.linkedin.com/in/merielmm/" target="blank"><i class="fa-brands fa-linkedin-in fa-xl"></i></a>
+                    </p>
+                    <p>
+                        Or, we can hang out online.
+                        <a href="https://twitter.com/MerielMelendrez" target="blank" ><i class="fa-brands fa-twitter fa-xl"></i></a>
+                        <a href="https://www.instagram.com/merielmelendrezmees/" target="blank"><i class="fa-brands fa-square-instagram fa-xl"></i></a>
+                    </p>
+                    <p>
+                        I also happen to be scientifically busking until November 24th, 2022. Please pitch in to support research about California Redwoods?   
+                        <a href="https://experiment.com/projects/how-do-california-redwood-stomata-change-with-height-what-are-the-implications-in-physiology-and-taxonomy" target="blank"><i class="fa-solid fa-flask fa-xl"></i></a>
+                    </p>
                 </div>
+            </div>
+
+            <!--Mobile Introduction-->
+
+            <div class="introduction-container-mobile">
+                
+                <div class="introduction-text-container">
+                    <h1>Hello.</h1>
+                    <p> My name is Meriel.</p>
+                    <p>I strive to live 
+                        <a href="./amor.html" id="ecological">
+                            <dfn title='a Spanish neologic idiom : in harmony with the generous, wild nature of life.'>
+                                al amor de la vida
+                            </dfn>
+                        </a>
+                        — I operate within a systems paradigm.</p>
+                        <p>Right now, I’m interested in building tech for tackling wicked problems, 
+                        so I’m studying software engineering and machine learning.</p>
+                    <p>
+                        If you want to collaborate on a project, please write!
+                    </p>
+                    <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#101;&#114;&#105;&#101;&#108;&#64;&#98;&#101;&#114;&#107;&#101;&#108;&#101;&#121;&#46;&#101;&#100;&#117;" target="blank"><i class="fa-solid fa-envelope fa-xl"></i></a>
+                    <a href="https://github.com/merielmelendrez" target="blank"><i class="fa-brands fa-github fa-xl"></i></a>  
+                    <a href="https://www.linkedin.com/in/merielmm/" target="blank"><i class="fa-brands fa-linkedin-in fa-xl"></i></a>
+                    
+                    <p>
+                        Or, we can hang out online.
+                    </p>
+                        <a href="https://twitter.com/MerielMelendrez" target="blank" ><i class="fa-brands fa-twitter fa-xl"></i></a>
+                        <a href="https://www.instagram.com/merielmelendrezmees/" target="blank"><i class="fa-brands fa-square-instagram fa-xl"></i></a>
+                    
+                    <p>
+                        I also happen to be scientifically busking until November 24th, 2022. Please pitch in to support research about California Redwoods?   
+                    </p>
+                        <a href="https://experiment.com/projects/how-do-california-redwood-stomata-change-with-height-what-are-the-implications-in-physiology-and-taxonomy" target="blank"><i class="fa-solid fa-flask fa-xl flask"></i></a>
+                    
+                </div>
+                <img 
+                src="./images/Meriel-17.jpg" 
+                alt="a photo of Meriel" 
+                class="portrait"
+                />
             </div>
         </section>
         </main>
         <footer>
             © Meriel Melendrez Mees 2022
             <br>
-            Banner photo by Michael C. Mees. Portrait by Marc.
+            (mehr-ee-el mel-en-dr-ez mace)
         </footer>
+                            
+            
     </body>
 </html>

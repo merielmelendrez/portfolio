@@ -16,27 +16,47 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Proza+Libre:wght@400;500;700&family=Work+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/068696ff86.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
-          <nav>
+      <header class="header">
+        <nav id="desktop">
             <a id="logo" href="./index.html">MERIEL MELENDREZ MEES</a>
             <ul class="navigation-items">
-            <li class="navigation-item" ><a href="./ecological.html"><dfn title=": pertaining to the relationships between organisms, and between organisms and their environments" id="oikos">ECOLOGICAL</dfn></a></li>
-            <li class="navigation-item present"><a href="./design.html">DESIGN</a></li>
-            <li class="navigation-item"><a href="./care.html">CARE</a></li>
-            <li class="navigation-item"><a href="./education.html">EDUCATION</a></li>
-            <li class="navigation-item"><a href="./research.html">RESEARCH</a></li>
-            <li class="navigation-item"><a href="./engineering.html">ENGINEERING</a></li>
-            <li class="navigation-item"><a href="./arts.html">ARTS</a></li>
+                <li class="navigation-item" id="ecological" ><a href="./ecological.html"><dfn title=": pertaining to the relationships between organisms and their environments">ECOLOGICAL</dfn></a></li>
+                <li class="navigation-item present"><a href="./design.html">DESIGN</a></li>
+                <li class="navigation-item"><a href="./care.html">CARE</a></li>
+                <li class="navigation-item"><a href="./education.html">EDUCATION</a></li>
+                <li class="navigation-item"><a href="./research.html">RESEARCH</a></li>
+                <li class="navigation-item"><a href="./engineering.html">ENGINEERING</a></li>
+                <li class="navigation-item"><a href="./arts.html">ARTS</a></li>
             </ul>
-        </nav>   
-        </header>
+        </nav>
+        <nav id="mobile">
+            <a id="logo-mobile" href="./index.html">MERIEL MELENDREZ MEES</a-->
+            <div class="menu-container">
+                <a class="navigation-item-mobile" id="ecological-mobile" href="./ecological.html"><dfn title=": pertaining to the relationships between organisms and their environments">ECOLOGICAL</dfn></a>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            
+
+                    <ul class="menu">
+                        <li class="navigation-item-mobile mobile-present"><a href="./design.html">DESIGN</a></li>
+                        <li class="navigation-item-mobile"><a href="./care.html">CARE</a></li>
+                        <li class="navigation-item-mobile"><a href="./education.html">EDUCATION</a></li>
+                        <li class="navigation-item-mobile"><a href="./research.html">RESEARCH</a></li>
+                        <li class="navigation-item-mobile"><a href="./engineering.html">ENGINEERING</a></li>
+                        <li class="navigation-item-mobile"><a href="./arts.html">ARTS</a></li>
+                    </ul>
+                
+            </div>
+        </nav>
+</header>
         <main class=side-page-container>
             <h1 class="output row">design</h1>
             <p class="explanation">
-                Design brings intentionality into the environment. For me, design has always meant design-think, design-build, design-care. 
-                Working on multiple layers of projects has granted me intimacy with ideas, materials, and verdant worlds.
+                Design brings intentionality into the environment. I love the iterative processes of design thinking,
+                the wonderment of biomimicry, and the common sense of permaculture. 
                 I locate needs and wants, solve problems, resolve conflicts (often between multiple species), and develop aesthetics. You can find a few of my projects below.
                  
             </p>
@@ -50,19 +70,19 @@
                   <img
                   src="./images/vallejo-garden.jpeg"
                   alt="a city meadow"
-                  class="project-image"
+                  class="ig-image"
                 />
                   <p class="project-description">
                     
                     My first design challenge was an 8,000ft² permaculture meditation garden, democratically funded by the citizens of Vallejo 
-                    in the first participatory budet initiative(PB) in the US.
-                    After that, I tailored a dozen designs for private residents and the environments they inhabited; most of these projects were partially funded by incentives from the State of California to convert lawns into climate-smart landscapes.
+                    in the first <a href="https://ci.vallejo.ca.us/cms/One.aspx?pageId=17560973" target="blank" id="external">participatory budet initiative(PB)</a> in the US.
+                    After that, I tailored a dozen designs for residents, with most of these projects partially funded by incentives from the State of California to convert lawns into climate-smart landscapes.
                     <br/><br/>
 
-                    For context, I named my gardening company “Little Bird Gardening” to celebrate emergent properites in complex systems. 
+                    I named this company “Little Bird Gardening” to celebrate emergent properites in complex systems. 
                     Powered flight emerged in birds at a confluence of adaptive and aesthetic traits. 
                     Flight, or the cognitive skills it sharpened, might have helped birds survive a global catastrophe and thrive afterwards. 
-                    I hope similar for humans and identified gardening as an important interface. 
+                    I hope similar for humans and identify gardening as one important interface. 
 
                   </p>
                 </details>
@@ -70,26 +90,36 @@
                   <summary class="project-title">
                     the garden mobile
                   </summary>
-                  <div id="garden-mobile"></div>
-                  <!--img
-                    src="./images/GardenMobile.jpg"
-                    alt="a bus covered in educational art about growing vegetables"
-                    class="project-image"
-                  /-->
+                  <div id="garden-mobile2"></div>
                   <p class="project-description">
-                    Also funded by the first participatory budget in the United States (see above), the Garden Mobile was a collaborative design 
+                    Funded by the first participatory budget in the United States (see "gardens," above), the Garden Mobile was a collaborative design 
                     project between the voters of Vallejo, the non-profit board of the Vallejo People’s Garden (VPG), 
                     the Obtainium Works art-car team, and myself as the VPG Education and Development Coordinator. 
-                    Funds from Participatory Budgeting expanded or started six community food gardens throughout the city. 
-                    The Garden Mobile was built to shuttle information and materials between VPG—a cultural hub but a geographical fringe—and the rest of the city. Notably, it needed to look good in the city’s two annual parades. 
+                    Participatory Budgeting expanded or started six community food gardens. 
+                    The Garden Mobile was built to shuttle information and materials between VPG—a cultural hub but a geographical fringe—and the rest of the city. 
+                    Notably, it needed to look good in Vallejo’s two annual parades. 
                     The design comittee also considered building a wooden garden shed on the back of a flatbed truck. 
                     After iterative meetings, we decided to wrap a bus in a decorative and educational vinyl shell. 
-                    A wheeled, collapsible ambulance cot would help load and unload cargo through the back door. <br /><br />
-                    I designed the wrap. The wooden background mirrors the garden beds at VPG and the desired shed on wheels. The watercolor-styled paintings unfurl along a golden spiral. 
+                    A wheeled, collapsible ambulance cot would help load and unload cargo through the back door. 
+                  </p>
+                  <figure>
+                    <img
+                    src="./images/Gardenmobile3.jpg"
+                    alt="a bus covered in educational art about growing vegetables"
+                    class="ig-image"
+                    />
+                    <figcaption class="ig-image">
+                      VPG volunteers, four Touro University medical students, using the bus to deliver a nutrition workshop.
+                    </figcaption>
+                  </figure>
+
+                  <p>I designed the wrap. The wooden background mirrors the garden beds at VPG and the desired shed on wheels. The watercolor-styled paintings unfurl along a golden spiral. 
                     The text provides different gardening information legible at short and long distances (a property which with more time I might have finessed). 
-                    <br /><br />
+                  </p>
+                  <p>
                     Even when simply parked, the Mobile does a lot to uphold VPG's mission of growing healthy food, people, and community.
                   </p>
+                  <div id="garden-mobile1"></div>
                 </details>
 
                 <details class="project">
@@ -106,14 +136,24 @@
                     </p>
                   </details>
               </section>
+              <a href="./design.html" id="refresh">↑</a>
+
         </main>
             
 
     
         
         <footer>
-          © Meriel Melendrez Mees 2022 <br />
-          <a href="./index.html#introduction">about & contact</a>
+          © Meriel Melendrez Mees 2022
+          <div class="contact-icons">
+            <a class="mobile-icon" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#101;&#114;&#105;&#101;&#108;&#64;&#98;&#101;&#114;&#107;&#101;&#108;&#101;&#121;&#46;&#101;&#100;&#117;" target="blank"><i class="fa-solid fa-envelope fa-sm"></i></a>
+            <a href="https://github.com/merielmelendrez" target="blank"><i class="fa-brands fa-github fa-sm"></i></a>  
+            <a href="https://www.linkedin.com/in/merielmm/" target="blank"><i class="fa-brands fa-linkedin-in fa-sm"></i></a> 
+            <a class="mobile-icon" href="https://twitter.com/MerielMelendrez" target="blank"><i class="fa-brands fa-twitter fa-sm"></i></a>
+            <a href="https://www.instagram.com/merielmelendrezmees/" target="blank"><i class="fa-brands fa-square-instagram fa-sm"></i></a>
+            <a href="https://experiment.com/projects/how-do-california-redwood-stomata-change-with-height-what-are-the-implications-in-physiology-and-taxonomy" target="blank"><i class="fa-solid fa-flask fa-sm"></i></a>
+          </div>
         </footer>
+
     </body>
 </html>
