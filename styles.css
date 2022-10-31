@@ -208,6 +208,12 @@ dfn:focus {
   color: #323232;
 }
 
+#normal {
+  font-style: normal;
+  color: gray;
+  margin: auto -.2%;
+}
+
 dfn:hover{
 transition: all .2s ease-in-out;
 transition-property: all;
