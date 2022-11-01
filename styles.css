@@ -344,7 +344,11 @@ details[open] summary {
   display: block;
 }
 
-
+.explanation {
+  font-family: 'Work Sans', sans-serif;
+  color: gray;
+  font-weight: normal;
+}
 
 summary {
   margin-left: 6%;
